@@ -29,7 +29,7 @@ int main(){
 	/* Funções da biblioteca <string.h> */
 	strcpy(sobrenome, nome);	/* Copia de uma string para outra seguindo (to,from) */
 	strcat(nome,sobrenome);		/* Concatena dois argumentos string */
-	strlen(nome);				/* Concatena dois argumentos string */
+	strlen(nome);				/* Pega o comprimento da string */
 	strcmp(nome,sobrenome);		/* Compara duas strings seguindo (str1,str2):
 										- se retornar 0 são iguais 
 										- se retornar <0 então str1 < str2
