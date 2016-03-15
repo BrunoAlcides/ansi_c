@@ -1,2 +1,5 @@
-# ansi_c
-ANSI- C studies for my Bachelor
+# ANSI-C Studies
+
+Here you can find codes that I've studied in my Bachelor using ANSI-C. Every code that you can find here is commented in two languages:
+  - pt-BR (Português Brasileiro)
+  - en-US (American English)
