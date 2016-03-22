@@ -5,4 +5,4 @@ Cada código aqui colocado foi testado utilizando a IDE Dev C++. Para testar, vo
 ```sh
 $ git clone https://github.com/mmoraisa/ansi_c.git
 ```
-Para testar o código na íntegra você pode descomentar algumas linhas de funções e realizar os testes compilando e executando o programa de cada arquivo std (study).
+Para testar o código na íntegra você pode descomentar algumas linhas de funções e realizar os testes compilando e executando cada programa dos stds (studies).
