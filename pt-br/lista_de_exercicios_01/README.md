@@ -2,7 +2,7 @@
 
 ## Vetores
 
-### [Exercício 1](../exercicios/exercicio_01.c)
+### [Exercício 1](exercicios/exercicio_01.c)
  Escreva um programa que leia um vetor de 8 elementos inteiros. Encontre e mostre o menor elemento e sua posição no vetor.
 
 ```c
