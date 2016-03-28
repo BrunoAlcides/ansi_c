@@ -19,7 +19,7 @@ int main() {
 
 	printf("Vetor: ");
 
-	for (i = 0; i < MAX; i++) {
+	for (i = 0;i < MAX; i++) {
 		if (numeros[i] == maior)
 			vezes++;
 
