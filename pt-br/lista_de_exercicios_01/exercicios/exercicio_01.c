@@ -5,18 +5,23 @@
 
 int main() {
 
-	int i, menor, numeros[MAX];
+	int i;
+	int menor;
+	int posicao;
+	int numeros[MAX];
 
 	for (i = 0;i < MAX;i++) {
-		printf("Digite um numero: ");
+		printf("Escreva o valor do elemento %d do vetor: ", i);
 		scanf("%d", &numeros[i]);
 
 		if (i == 0)
-			menor = i;
-		else if (numeros[i] < menor)
 			menor = numeros[i];
+		else if (numeros[i] < menor) {
+			menor = numeros[i];
+			posicao = i;
+		}
 	};
 
-	printf("O menor numero digitado foi: %d \n", menor);
+	printf("O menor numero digitado foi %d e esta na posicao %d do vetor.\n", menor, posicao);
 	system("pause");
 }
