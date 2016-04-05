@@ -1,20 +1,20 @@
 # Liste de Exercícios 01
 
 - [Vetores](#vetores)
-  - [Exercício 1](#exercicio_1)
-  - [Exercício 2](#exercicio_2)
-  - [Exercício 3](#exercicio_3)
-  - [Exercício 4](#exercicio_4)
-  - [Exercício 5](#exercicio_5)
+  - [Exercício 1](#exercício_1)
+  - [Exercício 2](#exercício_2)
+  - [Exercício 3](#exercício_3)
+  - [Exercício 4](#exercício_4)
+  - [Exercício 5](#exercício_5)
 - [Strings](#strings)
-  - [Exercício 6](#exercicio_6)
-  - [Exercício 7](#exercicio_7)
-  - [Exercício 8](#exercicio_8)
-  - [Exercício 9](#exercicio_9)
-- [Funções](#funcoes)
-  - [Exercício 10](#exercicio_10)
-  - [Exercício 11](#exercicio_11)
-  - [Exercício 12](#exercicio_12)
+  - [Exercício 6](#exercício_6)
+  - [Exercício 7](#exercício_7)
+  - [Exercício 8](#exercício_8)
+  - [Exercício 9](#exercício_9)
+- [Funções](#funções)
+  - [Exercício 10](#exercício_10)
+  - [Exercício 11](#exercício_11)
+  - [Exercício 12](#exercício_12)
 
 
 ## Vetores
