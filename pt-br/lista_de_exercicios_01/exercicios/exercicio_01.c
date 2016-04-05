@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "exercicio_01.h"
 
 #define MAX 8
 
@@ -13,15 +14,10 @@ int main() {
 	for (i = 0;i < MAX;i++) {
 		printf("Escreva o valor do elemento %d do vetor: ", i);
 		scanf("%d", &numeros[i]);
-
-		if (i == 0)
-			menor = numeros[i];
-		else if (numeros[i] < menor) {
-			menor = numeros[i];
-			posicao = i;
-		}
 	};
 
-	printf("O menor numero digitado foi %d e esta na posicao %d do vetor.\n", menor, posicao);
+	exercicio_01(numeros, &menor, &posicao);
+
+	printf("O menor numero do vetor: %d\nposicao: %d\n", menor, posicao);
 	system("pause");
 }

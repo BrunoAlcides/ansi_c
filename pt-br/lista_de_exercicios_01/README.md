@@ -1,5 +1,22 @@
 # Liste de Exercícios 01
 
+- [Vetores](#vetores)
+  - [Exercício 1](#exercicio_1)
+  - [Exercício 2](#exercicio_2)
+  - [Exercício 3](#exercicio_3)
+  - [Exercício 4](#exercicio_4)
+  - [Exercício 5](#exercicio_5)
+- [Strings](#strings)
+  - [Exercício 6](#exercicio_6)
+  - [Exercício 7](#exercicio_7)
+  - [Exercício 8](#exercicio_8)
+  - [Exercício 9](#exercicio_9)
+- [Funções](#funcoes)
+  - [Exercício 10](#exercicio_10)
+  - [Exercício 11](#exercicio_11)
+  - [Exercício 12](#exercicio_12)
+
+
 ## Vetores
 
 ### [Exercício 1](exercicios/exercicio_01.c)
@@ -8,24 +25,40 @@
 ```c
 #include <stdlib.h>
 #include <stdio.h>
+#include "exercicio_01.h"
 
 #define MAX 8
 
+/* exercicio_01.h */
+void exercicio_01(int *vetor, int *menor, int *posicao) {
+	int i;
+	*posicao = 0;
+
+	for (i = 0;i < 8;i++) {
+		if (i == 0)
+			*menor = vetor[i];
+		else if (vetor[i] < *menor) {
+			*posicao = i;
+			*menor = vetor[i];
+		}
+	}
+}
+
 int main() {
 
-	int i, menor, numeros[MAX];
+	int i;
+	int menor;
+	int posicao;
+	int numeros[MAX];
 
 	for (i = 0;i < MAX;i++) {
-		printf("Digite um numero: ");
+		printf("Escreva o valor do elemento %d do vetor: ", i);
 		scanf("%d", &numeros[i]);
-
-		if (i == 0)
-      menor = i;
-		else if (numeros[i] < menor)
-      menor = numeros[i];
 	};
 
-	printf("O menor numero digitado foi: %d \n", menor);
+	exercicio_01(numeros, &menor, &posicao);
+
+	printf("O menor numero do vetor: %d\nposicao: %d\n", menor, posicao);
 	system("pause");
 }
 
@@ -164,4 +197,62 @@ int main() {
 	system("pause");
 }
 
+```
+
+### [Exercício 5](exercicios/exercicio_05.c)
+Escrever um programa que lê 2 vetores X(10) e Y(10) e os escreve. Crie e apresente um vetor Z que seja:
+- a união de X e Y;
+- intersecção entre X e Y;
+
+``` c
+```
+
+## Strings
+
+### [Exercício 6](exercicios/exercicio_06.c)
+Elabore um programa que se utilize de 2 variáveis para guardar 2 nomes de pessoas (lidas do teclado). O programa deve apresentar o nome se forem idênticos, e caso não sejam apresentar:
+- O nome que tem maior número de letras;
+- O nome que deve aparecer primeiro me uma lista em ordem crescente;
+
+``` c
+```
+
+### [Exercício 7](exercicios/exercicio_07.c)
+Escrever um programa que leia palavra por palavra de uma frase, unindo cada palavra lida em uma única variável string (máximo 200 caracteres). A frase deve ser composta por 10 palavras.
+
+``` c
+```
+
+### [Exercício 8](exercicios/exercicio_08.c)
+Uma concessionária está fazendo uma promoção de seus 5 modelos e deseja analisar o faturamento por modelo ao final de cada dia. Para tanto, escreva um programa que armazene em um vetor o preço de cada modelo e em outro o nome do modelo no fechamento do dia (armazenando em um 3º vetor) e apresentar o modelo com maior faturamento e o modelo com maior número de unidades vendidas.
+
+``` c
+```
+
+### [Exercício 9](exercicios/exercicio_09.c)
+Modifique o programa anterior para que esse possua um menu, que após o cadastramento dos modelos e seus repectivos preços, fique sempre disponível para que o programa:
+- possa vender 1 unidade (de um modelo  escolhido pelo usúario) e registrar a venda no vetor de quantidades vendidas de cada modelo;
+- encerrar o dia (finalizar vendas), apresentando em o seguida o faturamento da venda de cada modelo.
+
+``` c
+```
+
+## Funções
+
+### [Exercício 10](exercicios/exercicio_10.c)
+Escrever um programa que leia a quantidade de horas e minutos e use uma função para calcular e retornar pelo nome da função (usando o comando return) a quantidade de minutos equivalente. Por exemplo, se entrar na função 3h e 15m a função deve retornar 195 minutos.
+
+``` c
+```
+
+### [Exercício 11](exercicios/exercicio_11.c)
+Elabore uma função que receba como parâmetro um valor que representa a quantidade de minutos e retorne a quantidade de horas e minutos.Exemplo, se recebe o valor 125 retorne 2 horas e 5 minutos.
+
+``` c
+```
+
+### [Exercício 12](exercicios/exercicio_12.c)
+Elabore um programa que leia a hora de entrada e a hora de saída de 1 trabalhador e utilize as funções elaboradas nos exercícios 3 e 4 para apresentar quantas horas ele trabalhou.
+
+``` c
 ```
